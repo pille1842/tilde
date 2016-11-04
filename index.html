@@ -5,39 +5,61 @@
 
   var config = {
     categories: [
-      { name: "Education", commands: [
-        { key: 'c', name: 'Coursera', url: 'https://www.coursera.org', search: '/courses?query=' },
-        { key: 'e', name: 'Egghead', url: 'https://egghead.io', search: '/search?q=' },
-        { key: 'K', name: 'Khan Academy', url: 'https://www.khanacademy.org', search: '/search?page_search_query=' },
-        { key: 'w', name: 'Wikipedia', url: 'https://en.wikipedia.org', search: '/wiki/' },
-      ] },
-      { name: "Media", commands: [
-        { key: 's', name: 'SoundCloud', url: 'https://soundcloud.com', search: '/search?q=' },
-        { key: 'u', name: 'Unsplash', url: 'https://unsplash.com', search: '/search?keyword=' },
-        { key: 'y', name: 'YouTube', url: 'https://www.youtube.com', search: '/results?search_query=' },
-        { key: 'Y', name: 'YTS', url: 'https://yts.ag', search: '/browse-movies/' },
-      ] },
-      { name: "News", commands: [
-        { key: 'h', name: 'Hacker News', url: 'https://hn.algolia.com', search: '/?query=' },
-        { key: 'p', name: 'Product Hunt', url: 'https://www.producthunt.com', search: '/search?q=' },
-        { key: 'r', name: 'Reddit', url: 'https://www.reddit.com', search: '/search?q=' },
-        { key: 'T', name: 'Codrops', url: 'http://tympanus.net/codrops', search: '/?search-type=posts&s=' },
-      ] },
-      { name: "Social", commands: [
-        { key: 'i', name: 'Inbox', url: 'https://inbox.google.com', search: '/search/' },
-        { key: 'f', name: 'Facebook', url: 'https://www.facebook.com', search: '/search/top/?q=' },
-        { key: 'I', name: 'Instagram', url: 'https://www.instagram.com' },
-        { key: 't', name: 'Twitter', url: 'https://twitter.com', search: '/search?q=' },
-      ] },
-      { name: "Tools", commands: [
-        { key: 'd', name: 'Drive', url: 'https://drive.google.com/drive', search: '/search?q=' },
-        { key: 'g', name: 'GitHub', url: 'https://github.com', search: '/search?q=' },
-        { key: 'k', name: 'Keep', url: 'https://keep.google.com', search: '/#search/text=' },
-      ] },
+        { name: "Social", commands: [
+            { key: 'G', name: 'Germania', url: 'http://www.pv-germania.org' },
+            { key: 'T', name: 'Teutonia', url: 'http://www.pv-teutonia.org' },
+            { key: 'f', name: 'Facebook', url: 'https://www.facebook.com', search: '/search/top/?q=' },
+            { key: 'r', name: 'Reddit', url: 'https://www.reddit.com', search: '/search?q=' },
+            { key: 't', name: 'Twitter', url: 'https://twitter.com', search: '/search?q=' },
+        ] },
+        { name: "Media", commands: [
+            { key: 'a', name: 'ARD-Mediathek', url: 'http://www.ardmediathek.de', search: '/tv/suche?searchText=' },
+            { key: 'b', name: 'Burning Series', url: 'https://bs.to' },
+            { key: 'k', name: 'kinox.to', url: 'http://kinox.to', search: '/Search.html?q=' },
+            { key: 'n', name: 'Netflix', url: 'https://www.netflix.com', search: '/search/' },
+            { key: 's', name: 'SoundCloud', url: 'https://soundcloud.com', search: '/search?q=' },
+            { key: 'y', name: 'YouTube', url: 'https://www.youtube.com', search: '/results?search_query=' },
+            { key: 'z', name: 'ZDF-Mediathek', url: 'http://www.zdf.de/ZDFMediathek' },
+        ] },
+        { name: "News", commands: [
+            { key: 'F', name: 'FAZ.NET', url: 'http://www.faz.net', search: '/suche/?query=' },
+            { key: 'N', name: 'New York Times', url: 'http://www.nytimes.com' },
+            { key: 'S', name: 'Süddeutsche.de', url: 'http://www.sueddeutsche.de', search: '/news?search=' },
+            { key: 'W', name: 'WELT', url: 'https://www.welt.de' },
+            { key: 'Z', name: 'ZEIT ONLINE', url: 'http://www.zeit.de', search: '/suche/index?q=' },
+            { key: 'b', name: 'Bad. Tagblatt', url: 'http://www.badisches-tagblatt.de' },
+            { key: 'o', name: 'SPIEGEL', url: 'http://www.spiegel.de', search: '/suche/index.html?suchbegriff=' },
+            { key: 'p', name: 'Wash. Post', url: 'https://www.washingtonpost.com', search: '/newssearch/?query=' },
+        ] },
+        { name: "Info", commands: [
+            { key: 'c', name: 'CHEFKOCH.DE', url: 'http://www.chefkoch.de', search: '/rs/s0/' },
+            { key: 'q', name: 'Qwiki', url: 'http://gimli/wiki', search: '/index.php?action=search&term=' },
+            { key: 'v', name: 'TVinfo', url: 'http://www.tvinfo.de', search: '/suche/' },
+            { key: 'w', name: 'Wikipedia', url: 'https://de.wikipedia.org', search: '/wiki/' }
+        ] },
+        { name: "Cloud", commands: [
+            { key: 'A', name: 'WhatsApp Web', url: 'https://web.whatsapp.com' },
+            { key: 'B', name: 'blaucloud.de', url: 'https://ehaberstroh.blaucloud.de' },
+            { key: 'M', name: 'Mail', url: 'http://gimli/roundcubemail' },
+            { key: 'd', name: 'Dropbox', url: 'https://www.dropbox.com', search: '/search/personal?query=' },
+            { key: 'e', name: 'Telegram Web', url: 'https://web.telegram.org' },
+            { key: 'g', name: 'GitHub', url: 'https://github.com', search: '/search?q=' }
+        ] },
+        { name: "RTFM", commands: [
+            { key: 'H', name: 'SELFHTML-Wiki', url: 'https://wiki.selfhtml.org', search: '/wiki/' },
+            { key: 'P', name: 'PHP Manual', url: 'http://www.php.net/manual/en' },
+            { key: 'R', name: 'ArchWiki', url: 'https://wiki.archlinux.org', search: '/index.php/' },
+            { key: 'j', name: 'jQuery API', url: 'http://api.jquery.com', search: '/?s=' },
+            { key: 'l', name: 'Laravel 5.2', url: 'https://laravel.com/docs/5.2' }
+        ] },
+        { name: "Dictionaries", commands: [
+            { key: 'm', name: 'Merriam-W.', url: 'http://www.merriam-webster.com', search: '/dictionary/' },
+            { key: 'L', name: 'LEO', url: 'http://dict.leo.org', search: '/ende/index_de.html#/search=' }
+        ] }
     ],
 
     // if none of the keys are matched, this is used for searching.
-    defaultSearch: 'https://encrypted.google.com/search?q=',
+    defaultSearch: 'https://duckduckgo.com/?q=',
 
     // the delimiter between the key and your search query.
     // e.g. to search GitHub for potatoes you'd type "g:potatoes".
@@ -58,7 +80,7 @@
     suggestionsLimit: 4,
 
     // open queries in a new tab.
-    newTab: true,
+    newTab: false,
 
     // the delimiter between the hours and minutes in the clock.
     clockDelimiter: '&nbsp;',
